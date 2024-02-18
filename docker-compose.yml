@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  front:
+    image: node:alpine3.18
+    tty: true
+    working_dir: /carte
+    volumes:
+      - './:/carte'
+    ports:
+      - "3006:3000"
